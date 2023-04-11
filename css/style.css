@@ -4,6 +4,12 @@ body {
   background: white
 }
 
+.main .text-container {
+  text-align: left;
+  max-width: 50rem;
+  margin: auto auto auto 13vw;
+}
+
 .main h1 {
   font-size: 4rem;
   font-weight: 600;
