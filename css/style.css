@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: white
+}
+
+.main h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0 0 2rem;
+  color: black
+}
+.main h3 {
+  margin: 1rem 0 0;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  font-weight: normal;
+  color: black
+}
