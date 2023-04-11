@@ -5,16 +5,22 @@ body {
 }
 
 .main .text-container {
-  text-align: left;
+  text-align: center;
   max-width: 50rem;
   margin: auto auto auto 13vw;
+}
+
+.main .resume-container {
+  width: 1000;
+  height: 1400;
+  margin: auto auto auto auto;
 }
 
 .main h1 {
   font-size: 4rem;
   font-weight: 600;
   margin: 0 0 2rem;
-  color: black
+  color: blue
 }
 .main h3 {
   margin: 1rem 0 0;
