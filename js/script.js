@@ -14,8 +14,6 @@ addEventListener('resize', () => {
 	canvas.height = window.innerHeight;
 });
 
-ctx.strokeStyle = gradient;
-ctx.lineWidth = 50;
 
 function Curve() {
 	this.init = function() {
@@ -28,6 +26,8 @@ function Curve() {
 	};
 	
 	this.iter = function() {
+		ctx.strokeStyle = gradient;
+		ctx.lineWidth = 50;
 		ctx.beginPath();
     		ctx.moveTo(this.x, this.y);
 		this.x1 = ((Math.random() * canvas.width / 5) - (canvas.width / 10)) + this.x;
@@ -40,8 +40,8 @@ function Curve() {
 	};
 	this.render = function() {
 		this.iter();
-		if(i > 10) {
-			setTimeout(() => this.init, 200);
+		if(this.i > 10) {
+			setTimeout(() => this.init, 100);
 		}
   	};
 	
