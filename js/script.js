@@ -1,4 +1,4 @@
-const canvas = document.querySelector('canvas');
+const canvas = document.querySelector('canvas#doodle');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
