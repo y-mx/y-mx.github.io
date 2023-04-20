@@ -26,6 +26,7 @@ function Curve() {
 	
 	this.iter = function() {
 		ctx.strokeStyle = gradient;
+		ctx.lineWidth = 10;
 		ctx.beginPath();
     		ctx.moveTo(this.x, this.y);
 		this.x1 = ((Math.random() * canvas.width / 5) - (canvas.width / 10)) + this.x;
@@ -34,13 +35,13 @@ function Curve() {
 		this.y2 = ((Math.random() * canvas.height / 5) - (canvas.width / 10)) + this.ye;
 		ctx.bezierCurveTo(this.x1, this.y1, this.x2, this.y2, this.xe, this.ye);
     		ctx.stroke();
-    		setTimeout(() => {}, 100);
+    		setTimeout(() => {}, 500);
 	};
 	this.render = function() {
 		this.iter();
     		this.i++;
     		if(this.i >= 10) {
-    			setTimeout(() => {}, 200);
+    			setTimeout(() => {}, 1000);
     			this.init();
 		}
   	};
@@ -49,7 +50,7 @@ function Curve() {
 
 const scrib = [];
 
-const n = 20;
+const n = 40;
 
 for(let i = 0; i < n; i++) {
 	scrib[i] = new Curve();
