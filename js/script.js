@@ -37,13 +37,12 @@ function Curve() {
 		ctx.bezierCurveTo(this.x1, this.y1, this.x2, this.y2, this.xe, this.ye);
     		ctx.stroke();
 		this.i++;
-		if(i > 10) {
-			this.init;
-		}
 	};
 	this.render = function() {
-    		setInterval(() => this.iter, 100);
-		// this.iter();
+		this.iter();
+		if(i > 10) {
+			setTimeout(() => this.init, 200);
+		}
   	};
 	
 }
