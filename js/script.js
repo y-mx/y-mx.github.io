@@ -22,28 +22,28 @@ function Curve() {
 		this.xe = ((Math.random() * canvas.width / 5) - (canvas.width / 10)) + this.x;
 		this.ye = ((Math.random() * canvas.height / 5) - (canvas.width / 10)) + this.y;
     		this.i = 0;
-	}
+	};
 	
 	this.iter = function() {
 		ctx.strokeStyle = gradient;
 		ctx.beginPath();
-      		ctx.moveTo(this.x, this.y);
+    		ctx.moveTo(this.x, this.y);
 		this.x1 = ((Math.random() * canvas.width / 5) - (canvas.width / 10)) + this.x;
 		this.y1 = ((Math.random() * canvas.height / 5) - (canvas.width / 10)) + this.y;
 		this.x2 = ((Math.random() * canvas.width / 5) - (canvas.width / 10)) + this.xe;
 		this.y2 = ((Math.random() * canvas.height / 5) - (canvas.width / 10)) + this.ye;
 		ctx.bezierCurveTo(this.x1, this.y1, this.x2, this.y2, this.xe, this.ye);
-      		ctx.stroke();
-      		setTimeout(() => {}, 100);
+    		ctx.stroke();
+    		setTimeout(() => {}, 100);
 	};
 	this.render = function() {
 		this.iter();
     		this.i++;
     		if(this.i >= 10) {
-      			setTimeout(() => {}, 200);
-      			this.init();
+    			setTimeout(() => {}, 200);
+    			this.init();
 		}
-    	}
+  	};
 	
 }
 
