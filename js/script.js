@@ -41,7 +41,8 @@ function Curve() {
     		this.i++;
     		if(this.i >= 10) {
       			setTimeout(() => {}, 200);
-      		this.init();
+      			this.init();
+		}
     	}
 	
 }
