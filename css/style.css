@@ -30,7 +30,7 @@ h3 {
   color: black
 }
 
-canvas {
+> canvas#doodle {
   position: absolute;
   top: 0;
   left: 0;
